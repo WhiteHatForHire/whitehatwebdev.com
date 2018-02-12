@@ -72,6 +72,8 @@ h1 {
   cursor: pointer;
   z-index: 100;
   transition: opacity .25s ease;
+  backface-visibility: hidden;
+
   
   &:hover {
     opacity: .7;
@@ -79,8 +81,9 @@ h1 {
   
   &.active {
     .top {
-      transform: translateY(11px) translateX(0) rotate(45deg);
+      transform: translateY(15px) translateX(0) scaleX(1.8) rotate(65deg);
       background: $color-active;
+      border-radius: 30px;
     }
     .middle {
       opacity: 0;
@@ -88,8 +91,9 @@ h1 {
     }
     
     .bottom {
-      transform: translateY(-11px) translateX(0) rotate(-45deg);
+      transform: translateY(-16px) scaleX(1.8) translateX(0) rotate(-65deg);
       background: $color-active;
+      border-radius: 30px;
     }
   }
   

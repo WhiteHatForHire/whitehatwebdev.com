@@ -554,18 +554,21 @@ h1 {
   width: 55px;
   cursor: pointer;
   z-index: 100;
-  transition: opacity .25s ease; }
+  transition: opacity .25s ease;
+  backface-visibility: hidden; }
   .button_container:hover {
     opacity: .7; }
   .button_container.active .top {
-    transform: translateY(11px) translateX(0) rotate(45deg);
-    background: black; }
+    transform: translateY(15px) translateX(0) scaleX(1.8) rotate(65deg);
+    background: black;
+    border-radius: 30px; }
   .button_container.active .middle {
     opacity: 0;
     background: black; }
   .button_container.active .bottom {
-    transform: translateY(-11px) translateX(0) rotate(-45deg);
-    background: black; }
+    transform: translateY(-16px) scaleX(1.8) translateX(0) rotate(-65deg);
+    background: black;
+    border-radius: 30px; }
   .button_container span {
     background: #d8d8d8;
     border: none;
