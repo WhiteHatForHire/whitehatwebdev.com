@@ -1,7 +1,25 @@
 .down_button {
-  background-color: white;
-  padding: 1rem;
-  border-radius: 100px;
-  color: black !important;
-  font-size: 10rem;
+  i {
+    // background-color: white;
+    // padding: 1rem;
+    // border-radius: 100px;
+    color: white !important;
+    font-size: 4rem;
+  }
+  &:hover {
+    transform: scale(1.15);
+    
+  }
+  &:after {
+    height: 0px !important;
+  }
+  transition: all .5s;
+  margin-top: 30vh;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 556px) {
+  .down_button {
+    margin-top: 25vh;
+  }
 }

@@ -1,3 +1,4 @@
+
 $('#toggle').click(function() {
   $(this).toggleClass('active');
   $('#overlay').toggleClass('open');
@@ -9,3 +10,7 @@ $('#toggle').click(function() {
    $('#overlay').toggleClass('open');
   console.log('working');
  });
+
+function down_arrow() {
+  document.getElementById('home').scrollIntoView({block: 'start', behavior: 'smooth'});
+}

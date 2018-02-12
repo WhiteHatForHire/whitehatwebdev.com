@@ -6,21 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>White Hat Web Development</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+  <!-- Start nav and bg -->
   <div class="bg">
     <div class="bg__video">
       <video class="bg-video__content" autoplay muted loop>
         <source src="img/busy-city.mp4" type="video/mp4">
-        <source src="img/busy-city.webm" type="video/webm"> Your browser is not supported!
+        <source src="img/busy-city.webm" type="video/webm">
+        <img src="img/Busy-City.jpg" alt="" title="Your browser is not supported!">
       </video>
     </div>
     <div class="container">
       <h1>White Hat Web Development</h1>
       <p>Sleek. Modern. Professional.</p>
-      <a href="#about" class="down_button">&darr;</a>
+      <a onclick="down_arrow()" class="down_button" id="down_arrow">
+        <i class="fa fa-arrow-circle-down"></i>
+      </a>
       <!-- Everything below this is part of the menu-->
     </div>
     <div class="button_container" id="toggle">
@@ -47,15 +52,32 @@
       </nav>
     </div>
   </div>
+  <!-- End nav and bg -->
+  
 
-
+<!-- Main content section -->
   <div class="main_content">
-    <div id="home">home</div>
-    <div id="about">about</div>
-    <div id="work">work</div>
-    <div id="contact">contact</div>
-  </div>
+    <div class="home_section">
+      <div id="home">home</div>
+    </div>
 
+
+    <div class="about_section">
+      <div id="about">about</div>
+    </div>
+
+
+    <div class="work_section">
+      <div id="work">work</div>
+    </div>
+
+
+
+    <div class="contact_section">
+      <div id="contact">contact</div>
+    </div>
+  </div>
+<!-- end main content section -->
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

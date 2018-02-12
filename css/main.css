@@ -504,11 +504,20 @@ body {
     width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .down_button {
-  background-color: white;
-  padding: 1rem;
-  border-radius: 100px;
-  color: black !important;
-  font-size: 10rem; }
+  transition: all .5s;
+  margin-top: 30vh;
+  cursor: pointer; }
+  .down_button i {
+    color: white !important;
+    font-size: 4rem; }
+  .down_button:hover {
+    transform: scale(1.15); }
+  .down_button:after {
+    height: 0px !important; }
+
+@media screen and (max-width: 556px) {
+  .down_button {
+    margin-top: 25vh; } }
 
 body {
   background: black; }
@@ -665,19 +674,13 @@ h1 {
     opacity: 1;
     left: 0; } }
 
-.main_content {
-  margin-top: 30rem;
-  text-align: center; }
-  .main_content div {
-    margin-top: 50rem; }
-
 .bg {
   height: 105vh; }
   .bg__video {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 105%;
     width: 100%;
     z-index: -1;
     opacity: .4;
@@ -686,3 +689,8 @@ h1 {
       height: 100%;
       width: 100%;
       object-fit: cover; }
+
+.main_content {
+  text-align: center; }
+  .main_content div {
+    margin-bottom: 50rem; }
