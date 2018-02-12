@@ -473,6 +473,10 @@ header {
 /**
  * Basic typography style for copy text
  */
+body {
+  color: white;
+  font-family: 'Varela Round', sans-serif; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -513,11 +517,13 @@ body {
   font-family: 'Varela Round', sans-serif; }
   .container p {
     font-size: 20px; }
+  .container h1 {
+    letter-spacing: 4px; }
   .container a {
     display: inline-block;
     position: relative;
     text-align: center;
-    color: white;
+    color: #d8d8d8;
     text-decoration: none;
     font-size: 20px;
     overflow: hidden;
@@ -525,7 +531,7 @@ body {
     .container a:after {
       content: '';
       position: absolute;
-      background: white;
+      background: #d8d8d8;
       height: 2px;
       width: 0%;
       transform: translateX(-50%);
@@ -544,8 +550,8 @@ h1 {
   position: fixed;
   top: 5%;
   margin-left: 2rem;
-  height: 27px;
-  width: 35px;
+  height: 50px;
+  width: 55px;
   cursor: pointer;
   z-index: 100;
   transition: opacity .25s ease; }
@@ -561,7 +567,7 @@ h1 {
     transform: translateY(-11px) translateX(0) rotate(-45deg);
     background: black; }
   .button_container span {
-    background: white;
+    background: #d8d8d8;
     border: none;
     height: 5px;
     width: 100%;
@@ -571,13 +577,13 @@ h1 {
     transition: all .35s ease;
     cursor: pointer; }
     .button_container span:nth-of-type(2) {
-      top: 11px; }
+      top: 17px; }
     .button_container span:nth-of-type(3) {
-      top: 22px; }
+      top: 34px; }
 
 .overlay {
   position: fixed;
-  background: white;
+  background: #d8d8d8;
   top: 0;
   left: 0;
   width: 100%;
@@ -648,3 +654,9 @@ h1 {
   100% {
     opacity: 1;
     left: 0; } }
+
+.main_content {
+  margin-top: 30rem;
+  text-align: center; }
+  .main_content div {
+    margin-top: 50rem; }
