@@ -14,3 +14,7 @@ $('#toggle').click(function() {
 function down_arrow() {
   document.getElementById('landing').scrollIntoView({block: 'start', behavior: 'smooth'});
 }
+
+function down_arrow2() {
+  document.getElementById('about').scrollIntoView({block: 'start', behavior: 'smooth'});
+}

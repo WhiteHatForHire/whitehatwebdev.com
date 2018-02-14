@@ -18,6 +18,28 @@
   cursor: pointer;
 }
 
+.landing_button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 40px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: all .2s;
+  &:hover {
+    transform: scale(1.1);
+  }
+  &:active {
+    transform: translatey(10px);
+  }
+}
+
 @media screen and (max-width: 556px) {
   .down_button {
     margin-top: 15vh;
