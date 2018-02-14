@@ -55,3 +55,9 @@
   margin: 0 auto;
   text-align: center;
 }
+
+.hover-shadow {
+  box-shadow: 0 0 4px 4px beige;
+  transition-property: box-shadow;
+  transition-duration: 1s;
+}

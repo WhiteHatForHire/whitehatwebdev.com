@@ -18,3 +18,9 @@ function down_arrow() {
 function down_arrow2() {
   document.getElementById('about').scrollIntoView({block: 'start', behavior: 'smooth'});
 }
+
+// $('.headSection').hover(
+//   function(){
+//     $(this).find('img').toggleClass('hover-shadow');
+//   }
+// );

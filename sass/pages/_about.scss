@@ -12,6 +12,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     &--max {
+      background-color: $color-main-blue;
       clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
       width: auto;
       padding: 1rem 5rem;
@@ -44,14 +45,29 @@
           float: center;
         }
       }
-      background-color: rgb(41, 41, 41);
 
       p {
         text-align: center;
       }
     }
+
+    // HOVER FOR HEADS
+    .headSection:hover {
+      img {
+        box-shadow: 0 0 4px 4px beige;
+      }
+    }
+    .headSection, .headSection img {
+      box-shadow: 0 0 0 0 beige;
+      transition-property: box-shadow;
+      transition-duration: .5s;
+      -webkit-transition-property: box-shadow;
+      -webkit-transition-duration: .5s;
+    }
+
     // END MAX STYLES
     &--booke {
+      background-color: $color-main-purple;
       clip-path: polygon(0 0, 88% 0, 100% 100%, 10% 100%);
       width: auto;
       padding: 1rem 5rem;
@@ -84,7 +100,6 @@
           float: center;
         }
       }
-      background-color: rgb(41, 41, 41);
 
       p {
         text-align: center;
@@ -92,7 +107,6 @@
     }
   }
 }
-
 
 @media screen and (max-width: 815px) {
   .about_section {
@@ -159,14 +173,12 @@
   }
 }
 
-
 @media screen and (max-width: 440px) {
   .about_section {
     &__row {
-      
       &--max {
         width: 95%;
-        
+
         &-text_container {
         }
       }

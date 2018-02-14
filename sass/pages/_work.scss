@@ -1,0 +1,8 @@
+.contact_section {
+  height: 100rem;
+  background: $color-main-grey;
+  &--header {
+    text-align: center;
+    font-size: $header-font;
+  }
+}
