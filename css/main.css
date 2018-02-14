@@ -702,7 +702,7 @@ h1 {
 
 .after_landing {
   height: 15rem;
-  background: linear-gradient(black, #25252f); }
+  background: linear-gradient(#25252f, black); }
 
 .landing_section {
   height: 100vh;
@@ -715,13 +715,13 @@ h1 {
     height: 100%;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; }
-    .landing_section--rowlanding_section--img {
-      flex: 1;
-      border-radius: 5px; }
+    flex-wrap: nowrap; }
+    .landing_section--row .landing_section--img {
+      width: 100%;
+      border-radius: 3px; }
     .landing_section--row-middle_content {
       align-self: center;
-      flex: 2; }
+      flex: 0 0 45vw; }
       .landing_section--row-middle_content h1 {
         font-size: 3rem; }
       .landing_section--row-middle_content ul {
@@ -739,10 +739,12 @@ h1 {
         height: 30px;
         display: block;
         margin: 0 auto; }
+      .landing_section--row-middle_content .small_center_text {
+        margin-bottom: 3rem; }
 
-@media screen and (max-width: 1045px) {
+@media screen and (max-width: 940px) {
   .landing_section {
-    height: 120vh; }
+    height: 100vh; }
     .landing_section .desktop {
       display: none; }
     .landing_section .mobile {
@@ -750,4 +752,45 @@ h1 {
     .landing_section--row {
       align-items: center;
       flex-direction: column;
-      flex-wrap: none; } }
+      flex-wrap: none; }
+      .landing_section--row .landing_section--img {
+        width: 30rem !important;
+        max-height: 10rem; } }
+
+@media screen and (max-width: 480px) {
+  .landing_section {
+    height: 100vh; }
+    .landing_section--row {
+      display: block; }
+      .landing_section--row-middle_content {
+        margin: 0 1rem; }
+      .landing_section--row .landing_section--img {
+        height: 25vh !important;
+        width: 100vw !important; } }
+
+@media screen and (max-width: 370px) {
+  .landing_section {
+    height: 100vh; }
+    .landing_section--row {
+      display: block; }
+      .landing_section--row h1 {
+        font-size: 2.5rem;
+        margin-bottom: .5rem; }
+      .landing_section--row ul {
+        padding: 0; }
+      .landing_section--row li {
+        text-align: center;
+        padding: 1rem 0 1rem 0;
+        list-style: none;
+        font-size: 1.2rem;
+        line-height: 1.3; }
+        .landing_section--row li i {
+          font-size: 1.3rem; }
+      .landing_section--row .small_hat {
+        margin-top: 4rem;
+        height: 20px;
+        display: block;
+        margin: 0 auto; }
+      .landing_section--row .landing_section--img {
+        height: 20vh !important;
+        width: 100vw !important; } }
