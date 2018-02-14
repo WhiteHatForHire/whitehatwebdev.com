@@ -81,9 +81,9 @@ h1 {
   
   &.active {
     .top {
-      transform: translateY(15px) translateX(0) scaleX(1.8) rotate(65deg);
+      transform: translateY(10px) translateX(0) scaleX(1.2) rotate(35deg);
       background: $color-active;
-      border-radius: 30px;
+      // border-radius: 30px;
     }
     .middle {
       opacity: 0;
@@ -91,9 +91,9 @@ h1 {
     }
     
     .bottom {
-      transform: translateY(-16px) scaleX(1.8) translateX(0) rotate(-65deg);
+      transform: translateY(-12px) scaleX(1.2) translateX(0) rotate(-35deg);
       background: $color-active;
-      border-radius: 30px;
+      // border-radius: 30px;
     }
   }
   
@@ -134,19 +134,20 @@ h1 {
     opacity: 1;
     visibility: visible;
     height: 100%;
+    z-index: 10;
     
     li {
       animation: fadeInRight .5s ease forwards;
-      animation-delay: .35s;
+      animation-delay: .25s;
       
       &:nth-of-type(2) {
-        animation-delay: .4s;
+        animation-delay: .3s;
       }
       &:nth-of-type(3) {
-        animation-delay: .45s;
+        animation-delay: .35s;
       }
       &:nth-of-type(4) {
-        animation-delay: .50s;
+        animation-delay: .40s;
       }
     }
   }

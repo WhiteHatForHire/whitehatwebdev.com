@@ -1,4 +1,3 @@
-
 .bg {
   height: 105vh;
 
@@ -22,11 +21,11 @@
   }
 }
 
-
-.main_content {
-  // margin-top: 30rem;
-  text-align: center;
-  div {
-    margin-bottom: 50rem;
-  }
+.after_bg {
+  height: 15rem;
+  background: linear-gradient(black, rgb(37, 37, 47));
+}
+.after_landing {
+  height: 15rem;
+  background: linear-gradient(black, rgb(37, 37, 47));
 }

@@ -12,5 +12,5 @@ $('#toggle').click(function() {
  });
 
 function down_arrow() {
-  document.getElementById('home').scrollIntoView({block: 'start', behavior: 'smooth'});
+  document.getElementById('landing').scrollIntoView({block: 'start', behavior: 'smooth'});
 }

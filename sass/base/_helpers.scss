@@ -40,3 +40,13 @@
   position: absolute;
   width: 1px;
 }
+
+.mirror {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+// TEXT
+.small_center_text {
+  text-align: center;
+}

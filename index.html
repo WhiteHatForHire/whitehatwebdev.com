@@ -12,7 +12,7 @@
 
 <body>
   <!-- Start nav and bg -->
-  <div class="bg">
+  <div class="bg" id="home">
     <div class="bg__video">
       <video class="bg-video__content" autoplay muted loop>
         <source src="img/busy-city.mp4" type="video/mp4">
@@ -40,7 +40,7 @@
             <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#landing">About</a>
           </li>
           <li>
             <a href="#work">Work</a>
@@ -53,12 +53,33 @@
     </div>
   </div>
   <!-- End nav and bg -->
-  
 
-<!-- Main content section -->
+  <!-- Space after video -->
+  <div class="after_bg">
+    <div class="fade_black_grey"></div>
+  </div>
+
+  <!-- Main content section -->
   <div class="main_content">
-    <div class="home_section">
-      <div id="home">home</div>
+    <div class="landing_section" id="landing">
+      <div class="landing_section--row">
+        <!-- <img src="img/Image_1.jpg" alt="" class="desktop landing_section--img"> -->
+        <img src="img/Image_2.jpg" alt="" class="desktop landing_section--img">
+        <img src="img/image_1_top_half.jpg" alt="" class="mobile landing_section--img">
+        <div class="landing_section--row-middle_content">
+          <h1>The time is now</h1>
+          <ul>
+            <li><i class="fa fa-bar-chart"></i> Amplify your objectives <i class="fa fa-bar-chart mirror"></i></li>
+            <li><i class="fa fa-users"></i> Expand on what truly matters <i class="fa fa-users mirror"></i></li>
+            <li><i class="fa fa-plane"></i> Discover the possibilities <i class="fa fa-plane mirror"></i></li>
+            <li><i class="fa fa-gift"></i> Create your dream website <i class="fa fa-gift mirror"></i></li>
+          </ul>
+          <img class="small_hat" src="img/small-hat.png" alt="">
+          <p class="small_center_text">White Hat Web Development</p>
+        </div>
+        <img src="img/Image_2.jpg" alt="" class="desktop landing_section--img mirror">
+        <img src="img/image_1_bottom_half.jpg" alt="" class="mobile landing_section--img">
+      </div>
     </div>
 
 
@@ -77,7 +98,7 @@
       <div id="contact">contact</div>
     </div>
   </div>
-<!-- end main content section -->
+  <!-- end main content section -->
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
