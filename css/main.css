@@ -735,8 +735,9 @@ h1 {
 .about_section {
   height: auto; }
   .about_section--heading {
+    padding-top: 2rem;
     font-size: 2.4rem;
-    margin-bottom: 6rem; }
+    margin-bottom: 5rem; }
   .about_section__row {
     display: flex;
     flex-direction: row;
@@ -746,7 +747,7 @@ h1 {
       clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
       width: auto;
       padding: 1rem 5rem;
-      margin-bottom: 7rem;
+      margin-bottom: 4rem;
       background-color: #292929; }
       .about_section__row--max img {
         height: 12.5rem;
@@ -816,7 +817,7 @@ h1 {
           height: 11rem;
           width: 11rem; }
         .about_section__row--max-text_container {
-          width: 100%; }
+          width: 105%; }
           .about_section__row--max-text_container-big_name {
             margin: 1rem 0 0 0; }
       .about_section__row--booke {
@@ -829,9 +830,13 @@ h1 {
           height: 11rem;
           width: 11rem; }
         .about_section__row--booke-text_container {
-          width: 100%; }
+          width: 105%; }
           .about_section__row--booke-text_container-big_name {
             margin: 1rem 0 0 0; } }
+
+@media screen and (max-width: 440px) {
+  .about_section__row--max {
+    padding: 1rem 0 !important; } }
 
 .landing_section {
   height: 100vh;
