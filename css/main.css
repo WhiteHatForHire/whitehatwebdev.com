@@ -524,7 +524,7 @@ body {
 
 @media screen and (max-width: 556px) {
   .down_button {
-    margin-top: 25vh; } }
+    margin-top: 15vh; } }
 
 body {
   background: black; }
@@ -703,6 +703,19 @@ h1 {
 .after_landing {
   height: 15rem;
   background: linear-gradient(#25252f, black); }
+
+.about_section h1 {
+  font-size: 2.4rem; }
+
+.about_section__row--max img {
+  height: 200px;
+  border-radius: 77px;
+  float: right; }
+
+.about_section__row--booke img {
+  height: 200px;
+  border-radius: 77px;
+  float: left; }
 
 .landing_section {
   height: 100vh;
