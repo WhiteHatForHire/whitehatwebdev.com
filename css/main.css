@@ -805,6 +805,8 @@ h1 {
 @media screen and (max-width: 815px) {
   .about_section {
     overflow: hidden; }
+    .about_section--heading {
+      margin-top: 2rem; }
     .about_section__row {
       margin-bottom: 6rem; }
       .about_section__row--max {
@@ -817,7 +819,7 @@ h1 {
           height: 11rem;
           width: 11rem; }
         .about_section__row--max-text_container {
-          width: 105%; }
+          width: 100%; }
           .about_section__row--max-text_container-big_name {
             margin: 1rem 0 0 0; }
       .about_section__row--booke {
@@ -830,13 +832,15 @@ h1 {
           height: 11rem;
           width: 11rem; }
         .about_section__row--booke-text_container {
-          width: 105%; }
+          width: 100%; }
           .about_section__row--booke-text_container-big_name {
             margin: 1rem 0 0 0; } }
 
 @media screen and (max-width: 440px) {
   .about_section__row--max {
-    padding: 1rem 0 !important; } }
+    width: 95%; }
+  .about_section__row--booke {
+    width: 95%; } }
 
 .landing_section {
   height: 100vh;

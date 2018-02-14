@@ -98,6 +98,7 @@
   .about_section {
     overflow: hidden;
     &--heading {
+      margin-top: 2rem;
     }
     &__row {
       margin-bottom: 6rem;
@@ -112,7 +113,7 @@
           width: 11rem;
         }
         &-text_container {
-          width: 105%;
+          width: 100%;
           &--icon {
           }
           &-big_name {
@@ -139,7 +140,7 @@
           width: 11rem;
         }
         &-text_container {
-          width: 105%;
+          width: 100%;
           &--icon {
           }
           &-big_name {
@@ -162,12 +163,15 @@
 @media screen and (max-width: 440px) {
   .about_section {
     &__row {
+      
       &--max {
-        padding: 1rem 0 !important;
+        width: 95%;
+        
         &-text_container {
         }
       }
       &--booke {
+        width: 95%;
       }
     }
   }
