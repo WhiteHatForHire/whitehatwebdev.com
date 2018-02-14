@@ -8,7 +8,7 @@ $('#toggle').click(function() {
   $('#toggle').toggleClass('active');
    
    $('#overlay').toggleClass('open');
-  console.log('working');
+  // console.log('working');
  });
 
 function down_arrow() {

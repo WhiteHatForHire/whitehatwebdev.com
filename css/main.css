@@ -615,7 +615,8 @@ h1 {
   opacity: .95;
   visibility: hidden;
   transition: opacity .35s, visibility .35s, height .35s;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 10; }
   .overlay.open {
     opacity: 1;
     visibility: visible;
@@ -670,7 +671,8 @@ h1 {
           transform: translateX(-50%);
           height: 3px;
           background: black;
-          transition: .35s; }
+          transition: .35s;
+          z-index: 10; }
 
 @keyframes fadeInRight {
   0% {
@@ -704,18 +706,106 @@ h1 {
   height: 15rem;
   background: linear-gradient(#25252f, black); }
 
-.about_section h1 {
-  font-size: 2.4rem; }
+.about_section {
+  height: auto; }
+  .about_section--heading {
+    font-size: 2.4rem;
+    margin-bottom: 6rem; }
+  .about_section__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .about_section__row--max {
+      clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+      width: auto;
+      padding: 1rem 5rem;
+      margin-bottom: 7rem;
+      background-color: #292929; }
+      .about_section__row--max img {
+        height: 12.5rem;
+        border-radius: 100px; }
+      .about_section__row--max-text_container {
+        height: 100%;
+        width: 25rem;
+        margin: 0 1rem;
+        display: block;
+        float: left; }
+        .about_section__row--max-text_container--icon {
+          font-size: 1.4rem;
+          margin-top: 0;
+          margin-bottom: 1rem; }
+        .about_section__row--max-text_container-big_name {
+          font-size: 2rem;
+          margin: 2rem 0 0 0; }
+          .about_section__row--max-text_container-big_name--sub {
+            margin-top: 0.3rem;
+            margin-bottom: 0.3rem; }
+        .about_section__row--max-text_container-description {
+          float: center; }
+      .about_section__row--max p {
+        text-align: center; }
+    .about_section__row--booke {
+      clip-path: polygon(0 0, 88% 0, 100% 100%, 10% 100%);
+      width: auto;
+      padding: 1rem 5rem;
+      margin-bottom: 3rem;
+      background-color: #292929; }
+      .about_section__row--booke img {
+        height: 12.5rem;
+        border-radius: 100px; }
+      .about_section__row--booke-text_container {
+        height: 100%;
+        width: 25rem;
+        margin: 0 1rem;
+        display: block;
+        float: right; }
+        .about_section__row--booke-text_container--icon {
+          font-size: 1.4rem;
+          margin-top: 0;
+          margin-bottom: 1rem; }
+        .about_section__row--booke-text_container-big_name {
+          font-size: 2rem;
+          margin: 2rem 0 0 0; }
+          .about_section__row--booke-text_container-big_name--sub {
+            margin-top: 0.3rem;
+            margin-bottom: 0.3rem; }
+        .about_section__row--booke-text_container-description {
+          float: center; }
+      .about_section__row--booke p {
+        text-align: center; }
 
-.about_section__row--max img {
-  height: 200px;
-  border-radius: 77px;
-  float: right; }
-
-.about_section__row--booke img {
-  height: 200px;
-  border-radius: 77px;
-  float: left; }
+@media screen and (max-width: 815px) {
+  .about_section {
+    overflow: hidden; }
+    .about_section__row {
+      margin-bottom: 6rem; }
+      .about_section__row--max {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .about_section__row--max img {
+          height: 11rem;
+          width: 11rem; }
+        .about_section__row--max-text_container {
+          width: 100%; }
+          .about_section__row--max-text_container-big_name {
+            margin: 1rem 0 0 0; }
+      .about_section__row--booke {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .about_section__row--booke img {
+          height: 11rem;
+          width: 11rem; }
+        .about_section__row--booke-text_container {
+          width: 100%; }
+          .about_section__row--booke-text_container-big_name {
+            margin: 1rem 0 0 0; } }
 
 .landing_section {
   height: 100vh;
