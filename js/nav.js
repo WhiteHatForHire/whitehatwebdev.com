@@ -1,4 +1,3 @@
-
 $('#toggle').click(function() {
   $(this).toggleClass('active');
   $('#overlay').toggleClass('open');
@@ -19,6 +18,9 @@ function down_arrow2() {
   document.getElementById('about').scrollIntoView({block: 'start', behavior: 'smooth'});
 }
 
+function down_arrow3() {
+  document.getElementById('work').scrollIntoView({block: 'start', behavior: 'smooth'});
+}
 // $('.headSection').hover(
 //   function(){
 //     $(this).find('img').toggleClass('hover-shadow');

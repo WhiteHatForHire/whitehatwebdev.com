@@ -734,7 +734,7 @@ h1 {
 .bg {
   height: 105vh; }
   .bg__video {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     height: 105%;
@@ -760,7 +760,7 @@ h1 {
   .about_section--heading {
     padding-top: 2rem;
     font-size: 2.4rem;
-    margin-bottom: 5rem; }
+    margin-bottom: 3rem; }
   .about_section__row {
     display: flex;
     flex-direction: row;
@@ -771,7 +771,7 @@ h1 {
       clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
       width: auto;
       padding: 1rem 5rem;
-      margin-bottom: 4rem; }
+      margin-bottom: 3rem; }
       .about_section__row--max img {
         height: 12.5rem;
         border-radius: 100px; }
