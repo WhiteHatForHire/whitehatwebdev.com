@@ -40,13 +40,15 @@ gulp.task("sass", function() {
     .pipe(bs.reload({ stream: true }))
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest("./dist/css"));
+  
+    
 });
 
 gulp.task("watch", ["browser-sync", "sass", "minify", "compress"], function() {
   gulp.watch("./sass/**/*.scss", ["sass"]);
   gulp.watch("./html/*.html", ["minify"]);
   gulp.watch("js/*.js", ["compress"]);
-  gulp.watch("*.html").on("change", bs.reload);
-  gulp.watch("*.scss").on("change", bs.reload);
-  gulp.watch("*.js").on("change", bs.reload);
+  gulp.watch("./html/*.html").on("change", bs.reload);
+  gulp.watch("./sass/*.scss").on("change", bs.reload);
+  gulp.watch("./js/*.js").on("change", bs.reload);
 });

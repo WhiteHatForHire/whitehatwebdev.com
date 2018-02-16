@@ -21,6 +21,7 @@ function down_arrow2() {
 function down_arrow3() {
   document.getElementById('work').scrollIntoView({block: 'start', behavior: 'smooth'});
 }
+
 // $('.headSection').hover(
 //   function(){
 //     $(this).find('img').toggleClass('hover-shadow');

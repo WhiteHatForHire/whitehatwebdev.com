@@ -7,6 +7,7 @@
   }
   height: 100vh;
   background-color: rgb(37, 37, 47);
+  
 
   &--row {
     height: 100%;
@@ -15,9 +16,11 @@
     justify-content: space-around;
     flex-wrap: nowrap;
 
+
     .landing_section--img {
       width: 100%;
       border-radius: 3px;
+     
     }
     &-middle_content {
       align-self: center;
@@ -32,6 +35,7 @@
     li {
       i {
         font-size: 1.5rem;
+        
       }
       text-align: center;
       padding: 1rem 0 1rem 0;
@@ -39,6 +43,7 @@
       font-size: 1.3rem;
       line-height: 1.3;
     }
+    
     .small_hat {
       margin-top: 4rem;
       height: 30px;
