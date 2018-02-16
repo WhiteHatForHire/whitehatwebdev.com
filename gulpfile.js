@@ -4,6 +4,7 @@ var bs = require("browser-sync").create();
 var minify = require('gulp-minify');
 var htmlmin = require('gulp-htmlmin');
 var cleanCSS = require('gulp-clean-css');
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task("browser-sync", ["sass"], function() {
   bs.init({
@@ -14,14 +15,13 @@ gulp.task("browser-sync", ["sass"], function() {
 });
 
 
-
 gulp.task('compress', function() {
-  gulp.src('js/*.js')
+  return gulp.src('./js/*.js')
     .pipe(minify({
         ext:{
-            min:'.js'
+          src:'-debug.js',
+          min:'.js'
         },
-        exclude: ['tasks'],
         ignoreFiles: ['.combo.js', '-min.js']
     }))
     .pipe(gulp.dest('./dist/js'));
@@ -38,10 +38,11 @@ gulp.task("sass", function() {
     .src("./sass/**/*.scss")
     .pipe(sass().on("error", sass.logError))
     .pipe(bs.reload({ stream: true }))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false }))
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest("./dist/css"));
-  
-    
 });
 
 gulp.task("watch", ["browser-sync", "sass", "minify", "compress"], function() {
