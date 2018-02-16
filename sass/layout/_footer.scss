@@ -1,7 +1,5 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the footer of the site/application.
-// -----------------------------------------------------------------------------
-
-
-@media only screen and (max-width: 767px) {
+footer {
+  li {
+    list-style: none;
+  }
 }

@@ -1,8 +1,88 @@
-.contact_section {
-  height: 100rem;
+.showcase_section {
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+  height: auto;
   background: $color-main-grey;
   &--header {
     text-align: center;
     font-size: $header-font;
+  }
+
+  // APPALACHIAN COUNSELING
+  &--appalachian {
+    margin: 0 auto;
+    width: 80%;
+    background: $color-main-purple;
+    border-radius: 5px;
+    margin-top: 6rem;
+    border: 3px solid black;
+    .appalachian_blurb {
+      height: inherit;
+      text-align: center;
+      overflow-wrap: normal;
+      margin-top: 3rem;
+      padding: 0 1rem;
+      padding-top: 1rem;
+      line-height: 1.4;
+      p {
+      font-size: 1.15rem;
+        max-width: 80%;
+        margin: 0 auto;
+      }
+    }
+    .appalachian_image {
+      padding-right: 1rem;
+      img {
+        width: 100%;
+        border-radius: 5px;
+        border: 3px solid black;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1250px) {
+  .showcase_section {
+    &--appalachian {
+      width: 80%;
+      .col {
+        margin: 1% 0 1% 0%;
+      }
+
+      .appalachian_blurb {
+        width: 100%;
+        padding: 0 2rem 1rem 2rem;
+      }
+      .appalachian_image {
+        width: 100%;
+        padding:  1.5rem;
+        padding-top: 0rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 786px) {
+  .showcase_section {
+    &--appalachian {
+      width: 90%;
+      .col {
+        margin: 1% 0 1% 0%;
+      }
+
+      .appalachian_blurb {
+        width: 100%;
+        padding: 0 2rem 1rem 2rem;
+        p {
+          max-width: 95%;
+        }
+      }
+      .appalachian_image {
+        width: 100%;
+        padding:  .5rem;
+        padding-top: 0rem;
+        
+      }
+    }
   }
 }
