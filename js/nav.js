@@ -21,6 +21,13 @@ function down_arrow2() {
 function down_arrow3() {
   document.getElementById('showcase').scrollIntoView({block: 'start', behavior: 'smooth'});
 }
+function down_arrow4() {
+  document.getElementById('home').scrollIntoView({block: 'start', behavior: 'smooth'});
+}
+
+function down_arrow5() {
+  document.getElementById('contact').scrollIntoView({block: 'start', behavior: 'smooth'});
+}
 
 // $('.headSection').hover(
 //   function(){
